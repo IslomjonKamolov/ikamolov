@@ -99,6 +99,18 @@ function playClickSound(src) {
   audio.play();
 }
 
+window.addEventListener("resize", function(){
+  if (this.window.innerWidth > 768){
+    header_list.style.height = 26 + "px"
+    header_list.style.overflow = "hidden"
+  }else{
+    header_list.style.height = 0
+    burger_icon.style.transform = "rotate(0deg)"
+    isMenuOpen = false
+  }
+  
+})
+
 function openMenu (){
   header_list.style.height = 1 + "px"
   header_list.style.overflow = "auto"

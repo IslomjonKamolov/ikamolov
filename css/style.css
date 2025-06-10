@@ -354,4 +354,18 @@ a {
   .main_container {
     flex-direction: column;
   }
+
+  .main_title, .main_text, .main_title_mini{
+    text-align: center;
+  }
+
+  .social_box {
+    justify-content: center;
+  }
+  .contact{
+    margin-left: auto;
+    display: flex;
+    max-width: 200px;
+    margin-right: auto;
+  }
 }

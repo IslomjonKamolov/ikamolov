@@ -31,7 +31,7 @@ const languages_data = {
       "a Youtuber",
       "a Handsome guy",
     ],
-    mainText: `If I were to briefly describe myself — I'm just a simple, young, and decent-looking guy. I'm interested in programming, creating content for YouTube, playing multiplayer games, learning how to talk to girls, rapping, and making music. I try to be sincere and want to get along with people easily, though I haven't fully achieved that yet. I can create Telegram bots and websites. You can read more on the "About Me" page :)`,
+    mainText: `If I were to briefly describe myself — I'm just a simple, young, and decent-looking guy. I'm interested in programming, creating content for YouTube, playing multiplayer games, learning how to talk to girls, rapping, and making music. I try to be sincere and want to get along with people easily, though I haven't fully achieved that yet. I can create Telegram bots and websites. You can read more on the "About" page :)`,
   },
   RU: {
     nav: {
