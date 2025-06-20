@@ -2,7 +2,9 @@ import { languages_data } from "./language.js";
 
 const currentLanguage = document.getElementById("current--language");
 const contactBtn = document.querySelector(".contact");
-const languageSelectionList = document.getElementById("language--selection--list");
+const languageSelectionList = document.getElementById(
+  "language--selection--list"
+);
 const languages = document.querySelectorAll(".languages");
 
 const about = document.getElementById("about");
@@ -13,9 +15,9 @@ const mainTitle = document.getElementById("mainTitle");
 const miniTitle = document.getElementById("miniTitle");
 const mainText = document.getElementById("mainText");
 const myRole = document.getElementById("role");
-const burger = document.getElementById("mobile--burger")
-const burger_icon = document.querySelector(".mobile_burger--icon")
-const header_list = document.querySelector(".header__list")
+const burger = document.getElementById("mobile--burger");
+const burger_icon = document.querySelector(".mobile_burger--icon");
+const header_list = document.querySelector(".header__list");
 
 let hideTimeOut;
 let currentLang;
@@ -28,9 +30,6 @@ currentLanguage.addEventListener("click", () => {
     languageSelectionList.style.transform = "scale(0)";
   }, 3000);
 });
-
-
-
 
 // Random role va miniTitle ni yangilovchi funksiya
 function RandomRoleFun(lang) {
@@ -91,44 +90,35 @@ setInterval(() => {
   }
 }, 5000);
 
-let isMenuOpen = false
+let isMenuOpen = false;
 
-function playClickSound(src) {
-  const audio = new Audio(src)
-  audio.currentTime = 0; // har safar boshidan
-  audio.play();
-}
-
-window.addEventListener("resize", function(){
-  if (this.window.innerWidth > 768){
-    header_list.style.height = 26 + "px"
-    header_list.style.overflow = "hidden"
-  }else{
-    header_list.style.height = 0
-    burger_icon.style.transform = "rotate(0deg)"
-    isMenuOpen = false
+window.addEventListener("resize", function () {
+  if (this.window.innerWidth > 768) {
+    header_list.style.height = 26 + "px";
+    header_list.style.overflow = "hidden";
+  } else {
+    header_list.style.height = 0;
+    burger_icon.style.transform = "rotate(0deg)";
+    isMenuOpen = false;
   }
-  
-})
+});
 
-function openMenu (){
-  header_list.style.height = 1 + "px"
-  header_list.style.overflow = "auto"
-  header_list.style.transition = "all 300ms"
-  burger_icon.style.transition = "all 300ms"
-  if (!isMenuOpen){
-    playClickSound("./click.mp3")
+function openMenu() {
+  header_list.style.height = 1 + "px";
+  header_list.style.overflow = "auto";
+  header_list.style.transition = "all 300ms";
+  burger_icon.style.transition = "all 300ms";
+  if (!isMenuOpen) {
     console.log(header_list.scrollHeight);
-    burger_icon.style.transform = "rotate(180deg)"
-    header_list.style.height = header_list.scrollHeight + "px"
+    burger_icon.style.transform = "rotate(180deg)";
+    header_list.style.height = header_list.scrollHeight + "px";
     console.log(header_list.scrollHeight);
-    isMenuOpen = true
-  } else{
-    playClickSound('./error.mp3')
-    header_list.style.height = 0 + "px"
-    burger_icon.style.transform = "rotate(0deg)"
-    isMenuOpen = false
+    isMenuOpen = true;
+  } else {
+    header_list.style.height = 0 + "px";
+    burger_icon.style.transform = "rotate(0deg)";
+    isMenuOpen = false;
   }
 }
 
-burger.addEventListener('click', openMenu)
+burger.addEventListener("click", openMenu);
