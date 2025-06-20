@@ -10,7 +10,15 @@ body {
   min-height: 100vh;
   color: #fff;
   font-family: Share Tech, sans-serif;
+  background-image: url(../images/Background.webp);
+  object-fit: cover;
+  background-size: cover; 
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backdrop-filter: blur(3px);
 }
+
 
 a {
   color: rgb(224, 236, 255);
@@ -119,6 +127,10 @@ a {
   max-width: 580px;
   min-width: 348px;
   display: block;
+  background: #0000001f;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000003a;
 }
 
 .main_title {
@@ -368,4 +380,43 @@ a {
     max-width: 200px;
     margin-right: auto;
   }
+}
+
+/* About page styles */
+
+.about_hero{
+  padding: 20px 0;
+}
+
+.about_hero_container{
+  max-width: 1232px;
+  padding: 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about_hero_title{
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about_hero_title--mini{
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 2px;
+  background: #0000004f;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.about_hero_text{
+  font-size: 20px;
+  line-height: 150%;
+  text-align: justify;
+  letter-spacing: 0.8px;
+  line-height: 130%;
+  word-spacing: 8px;
+  margin-bottom: 30px;
 }
