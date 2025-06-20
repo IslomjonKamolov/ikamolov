@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   color: #fff;
   font-family: Share Tech, sans-serif;
-  background-image: url(../images/Background.webp);
+  /* background-image: url(../images/Background.webp); */
   object-fit: cover;
   background-size: cover; 
   background-position: bottom center;
